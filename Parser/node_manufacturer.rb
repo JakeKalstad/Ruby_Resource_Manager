@@ -1,6 +1,6 @@
 require 'resx_reader'
 class Node_Manufacturer
-          attr_accessor :resource_tuple
+      attr_accessor :resource_tuple
   def initialize(file_path)
     @resource_tuple = Array.new
     @resource_index = 0
