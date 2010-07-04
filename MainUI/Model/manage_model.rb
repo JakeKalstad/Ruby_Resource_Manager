@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + "/../Dialogs/file_dialog"
 class Manage_Events
-     def add_file
+   def add_file
      dialog = File_Dialog.new(nil, 'Choose a .resx file!', 'RESX File (*.resx)|*.resx|')
      result = dialog.show_modal
      if result == Wx::ID_OK
@@ -11,9 +11,16 @@ end
 
 class ButtonIds
   attr_accessor :add
-  def initialize
-   @add = 2000
-  end
+    def initialize
+      @add = 2000
+    end
+end
+
+class ComponentIds
+  attr_accessor :recent_choice
+    def initialize
+      @recent_choice = 3000
+    end
 end
 
 class Map
