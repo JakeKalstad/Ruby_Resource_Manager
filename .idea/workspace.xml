@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Parser/node_manufacturer.rb" line="52" />
     <bookmark url="file://$PROJECT_DIR$/MainUI/View/MainUI.rb" line="25" />
   </component>
   <component name="ChangeListManager" verified="true">
@@ -27,46 +28,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainUI.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
+      <file leaf-file-name="resx_node.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/resx_node.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event_map.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
+      <file leaf-file-name="resx_reader.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parser/resx_reader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+            <state line="26" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_events.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
+      <file leaf-file-name="node_manufacturer.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Parser/node_manufacturer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="20" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_driver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage_ui.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="160" selection-end="160" vertical-scroll-proportion="0.23863636">
+            <state line="27" column="48" selection-start="920" selection-end="920" vertical-scroll-proportion="0.5338983">
               <folding />
             </state>
           </provider>
@@ -91,22 +74,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MainUI/EventIds" />
         <option value="$APPLICATION_HOME_DIR$/rubystubs18/object.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/event_commander.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/event_map.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/EventIds.rb" />
         <option value="$APPLICATION_HOME_DIR$/rubystubs18/kernel.rb" />
         <option value="$PROJECT_DIR$/MainUI/Controller/main_driver.rb" />
-        <option value="$PROJECT_DIR$/Parser/resx_reader.rb" />
         <option value="$PROJECT_DIR$/Data/resx_tuple.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/event_map.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/EventIds.rb" />
         <option value="C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb" />
-        <option value="$PROJECT_DIR$/MainUI/View/MainUI.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/main_events.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/translate_ui.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/manage_ui.rb" />
+        <option value="$PROJECT_DIR$/MainUI/View/MainUI.rb" />
+        <option value="$PROJECT_DIR$/Parser/resx_reader.rb" />
+        <option value="$PROJECT_DIR$/Parser/node_manufacturer.rb" />
       </list>
     </option>
   </component>
@@ -151,6 +134,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,6 +205,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -231,7 +228,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.main_driver">
+  <component name="RunManager" selected="Ruby.node_manufacturer">
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -425,7 +422,35 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="10">
+    <configuration default="false" name="node_manufacturer" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="ResourceManager" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/Parser" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/Parser/node_manufacturer.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="resx_reader" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="ResourceManager" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/Parser" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/Parser/resx_reader.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Ruby.MainUI" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.EventIds.rb" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.EventIds" />
@@ -436,6 +461,8 @@
       <item index="7" class="java.lang.String" itemvalue="Ruby.drb" />
       <item index="8" class="java.lang.String" itemvalue="Ruby.resx_node" />
       <item index="9" class="java.lang.String" itemvalue="Ruby.manage_ui" />
+      <item index="10" class="java.lang.String" itemvalue="Ruby.node_manufacturer" />
+      <item index="11" class="java.lang.String" itemvalue="Ruby.resx_reader" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -456,7 +483,7 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -464,9 +491,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170112" sideWeight="0.84004605" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170112" sideWeight="0.844649" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15189873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14729574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -514,13 +541,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/kernel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1587" column="6" selection-start="51941" selection-end="51941" vertical-scroll-proportion="0.33238637">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/wxruby-2.0.1-x86-mswin32-60/samples/grid/grid.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.578125">
@@ -563,16 +583,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/resx_reader.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="113" selection-end="113" vertical-scroll-proportion="0.17177914">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/resx_node.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="45" selection-end="45" vertical-scroll-proportion="0.042944785">
+        <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -584,30 +597,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+        <state line="39" column="85" selection-start="1454" selection-end="1454" vertical-scroll-proportion="1.1921397">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+        <state line="7" column="42" selection-start="226" selection-end="226" vertical-scroll-proportion="0.2139738">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+        <state line="37" column="20" selection-start="990" selection-end="990" vertical-scroll-proportion="1.1277213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="160" selection-end="160" vertical-scroll-proportion="0.23863636">
           <folding />
         </state>
       </provider>
@@ -619,9 +632,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
+    <entry file="file://$PROJECT_DIR$/Data/resx_node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="160" selection-end="160" vertical-scroll-proportion="0.23863636">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/resx_reader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/node_manufacturer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="48" selection-start="920" selection-end="920" vertical-scroll-proportion="0.5338983">
           <folding />
         </state>
       </provider>

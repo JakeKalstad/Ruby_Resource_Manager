@@ -25,14 +25,14 @@ class MainForm < Wx::App
 
       def menu_events
          @frame.evt_menu(@event_ids.help_id) { on_dialog(@event_ids.help_id) }
+      def append_menu_dialogs
+             menu_dialogs = Wx::Menu.new()
          @frame.evt_menu(@event_ids.about_id) { on_dialog(@event_ids.about_id) }
          @frame.evt_menu(@event_ids.exit_id) { on_dialog(@event_ids.exit_id) }
          @frame.evt_menu(@event_ids.manage_id) { on_dialog(@event_ids.manage_id) }
          @frame.evt_menu(@event_ids.translate_id) { on_dialog(@event_ids.translate_id) }
       end
 
-      def append_menu_dialogs
-             menu_dialogs = Wx::Menu.new()
              menu_dialogs.append(@event_ids.manage_id, "&Manage!\t", '')
              menu_dialogs.append(@event_ids.translate_id, "&Translate!\t", '')
              menu_dialogs.append(@event_ids.help_id, "&Help!\t", '')
