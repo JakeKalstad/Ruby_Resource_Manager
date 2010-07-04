@@ -30,34 +30,34 @@
       <file leaf-file-name="MainUI.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="60" selection-start="1052" selection-end="1052" vertical-scroll-proportion="1.2191582">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_commander.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/event_commander.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="16" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="-0.16335227">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="event_map.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/event_map.rb">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="30" selection-start="82" selection-end="258" vertical-scroll-proportion="0.0">
+            <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_events.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="4" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EventIds.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/EventIds.rb">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/EventIds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+            <state line="9" column="33" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,11 +75,15 @@
       <list>
         <option value="$PROJECT_DIR$/MainUI/View/MainUI" />
         <option value="$PROJECT_DIR$/MainUI/EventIds" />
-        <option value="$PROJECT_DIR$/MainUI/View/EventIds.rb" />
-        <option value="$PROJECT_DIR$/MainUI/View/event_map.rb" />
         <option value="$APPLICATION_HOME_DIR$/rubystubs18/object.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/event_commander.rb" />
+        <option value="$PROJECT_DIR$/MainUI/View/event_map.rb" />
+        <option value="$PROJECT_DIR$/MainUI/View/EventIds.rb" />
+        <option value="$APPLICATION_HOME_DIR$/rubystubs18/kernel.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Model/EventIds.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Model/event_map.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/MainUI.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Model/main_events.rb" />
       </list>
     </option>
   </component>
@@ -110,7 +114,74 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Favorites" />
       <pane id="Scope" />
@@ -208,12 +279,12 @@
     <configuration default="false" name="EventIds" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="ResourceManager" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/MainUI/View" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/MainUI/Model" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/MainUI/View/EventIds.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/MainUI/Model/EventIds.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
@@ -236,23 +307,38 @@
     <configuration default="false" name="event_map" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="ResourceManager" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/MainUI/View" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/MainUI/Model" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/MainUI/View/event_map.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/MainUI/Model/event_map.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <configuration default="false" name="main_events" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="ResourceManager" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/MainUI/Model" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/MainUI/Model/main_events.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Ruby.MainUI" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.EventIds.rb" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.EventIds" />
       <item index="3" class="java.lang.String" itemvalue="Ruby.event_commander" />
       <item index="4" class="java.lang.String" itemvalue="Ruby.event_map" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.main_events" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -273,15 +359,15 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36168522" sideWeight="0.84004605" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170112" sideWeight="0.84004605" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15189873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -331,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="877" selection-end="877" vertical-scroll-proportion="0.3653846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/wxruby-2.0.1-x86-mswin32-60/lib/wx/accessors.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.33238637">
@@ -352,30 +431,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/EventIds.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/kernel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+        <state line="1587" column="6" selection-start="51941" selection-end="51941" vertical-scroll-proportion="0.33238637">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/event_map.rb">
+    <entry file="file://C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="82" selection-end="258" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.34375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/event_commander.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/EventIds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+        <state line="9" column="33" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="60" selection-start="1052" selection-end="1052" vertical-scroll-proportion="1.2191582">
+        <state line="16" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="-0.16335227">
           <folding />
         </state>
       </provider>
