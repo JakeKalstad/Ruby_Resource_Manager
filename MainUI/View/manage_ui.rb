@@ -16,6 +16,7 @@ class Manage_GUI < Wx::Frame
        puts @ids.add
        evt_button(@ids.add) {
                               @model.on_click(@ids.add)
+                              @recent_menu.clear
                               @model.populate_recent(@recent_menu)
                             }
    end

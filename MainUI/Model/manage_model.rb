@@ -20,7 +20,7 @@ class Manage_Events
 
    def populate_recent(choice_box)
      contents = Read.new.receive_file_contents
-     contents.each_index { |index|  choice_box.append(contents[index]) }
+     contents.each_index { |index|  choice_box.append(contents[index].split("\\").last) }
    end
 
 end
@@ -41,12 +41,12 @@ class ComponentIds
 end
 
 class Map
-      attr_accessor :map
+   attr_accessor :map
 
-      def initialize()
+     def initialize()
         events = Manage_Events.new
         ids = ButtonIds.new
         @map = Hash.new
         @map[ids.add] = proc { events.add_file }
-      end
+     end
 end
