@@ -33,10 +33,11 @@ class ButtonIds
 end
 
 class ComponentIds
-  attr_accessor :recent_choice, :recent_label
+  attr_accessor :recent_choice, :recent_label, :grid_id
     def initialize
       @recent_choice = 3000
       @recent_label = 3001
+      @grid_id = 3002
     end
 end
 
