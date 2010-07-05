@@ -19,7 +19,7 @@ class Manage_Events
    end
 
    def populate_recent(choice_box)
-     contents = Read.receive_file_contents
+     contents = Read.new.receive_file_contents
      contents.each_index { |index|  choice_box.append(contents[index]) }
    end
 

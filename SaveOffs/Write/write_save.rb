@@ -3,6 +3,7 @@ class Save
   def initialize(file_path_to_save)
 
      @file_path = file_path_to_save
+     @file_content = Array.new
      @save_location = 'saved_jobs.wtf'
      
       if !first_time_check
@@ -20,9 +21,13 @@ class Save
   end
 
   def append_and_write
-    contents = Read.receive_file_contents
+    contents = Read.new.receive_file_contents
     content = @file_path.split("\\").last
-    contents.push(content)
-    contents.each_index { |index| @file.puts contents[index]}
+    @file_content << content
+    @file_content += contents
+    @file_content.each_index { |index|
+                               @file.puts @file_content[index]
+                                @file.close_write
+                              }
   end
 end

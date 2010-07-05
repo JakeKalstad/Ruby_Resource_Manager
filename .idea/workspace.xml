@@ -28,73 +28,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manage_ui.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="303" selection-end="303" vertical-scroll-proportion="-12.36">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_driver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="16" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manage_model.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="61" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+            <state line="27" column="20" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_save.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manage_ui.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_save.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveOffs/Read/read_save.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="46" selection-start="273" selection-end="273" vertical-scroll-proportion="0.44491526">
+            <state line="21" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="write_save.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="write_save.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="41" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resx_reader.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Parser/resx_reader.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node_manufacturer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Parser/node_manufacturer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="23" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom_require.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+            <state line="29" column="49" selection-start="796" selection-end="796" vertical-scroll-proportion="0.8601695">
               <folding />
             </state>
           </provider>
@@ -110,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Data/resx_tuple.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Model/event_map.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/EventIds.rb" />
         <option value="C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/main_events.rb" />
@@ -122,10 +84,12 @@
         <option value="$PROJECT_DIR$/MainUI/Dialogs/file_dialog.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/manage_events.rb" />
         <option value="$APPLICATION_HOME_DIR$/rubystubs18/io.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Controller/main_driver.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Controller/saved_jobs.wtf" />
         <option value="$PROJECT_DIR$/MainUI/View/manage_ui.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
-        <option value="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" />
+        <option value="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
       </list>
     </option>
   </component>
@@ -226,6 +190,10 @@
               <option name="myItemId" value="MainUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -242,6 +210,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,9 +599,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2281399" sideWeight="0.5926352" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39930955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14729574" sideWeight="0.9825073" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3036566" sideWeight="0.844649" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14729574" sideWeight="0.9825073" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -657,40 +643,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/MainUI/View/manage_ui.rb</url>
-          <line>26</line>
+          <line>29</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb</url>
+          <line>27</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb</url>
+          <line>24</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/file_dialog.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/EventIds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1525" selection-end="1609" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/View/translate_ui.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
@@ -712,30 +678,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="61" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -747,30 +692,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/EventIds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.059322033">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/event_map.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="250" selection-end="250" vertical-scroll-proportion="0.23728813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Parser/resx_reader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+        <state line="26" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.7033898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/wxruby-2.0.1-x86-mswin32-60/lib/wx.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.5276074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="303" selection-end="303" vertical-scroll-proportion="-12.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SaveOffs/Read/read_save.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="46" selection-start="273" selection-end="273" vertical-scroll-proportion="0.44491526">
+        <state line="21" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/saved_jobs.wtf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="49" selection-start="796" selection-end="796" vertical-scroll-proportion="0.8601695">
           <folding />
         </state>
       </provider>

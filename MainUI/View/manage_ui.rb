@@ -14,7 +14,10 @@ class Manage_GUI < Wx::Frame
 
    def event_handlers
        puts @ids.add
-       evt_button(@ids.add) { @model.on_click(@ids.add) }
+       evt_button(@ids.add) {
+                              @model.on_click(@ids.add)
+                              @model.populate_recent(@recent_menu)
+                            }
    end
 
    def initialize_components
