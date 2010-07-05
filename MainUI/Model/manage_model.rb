@@ -1,21 +1,26 @@
 require File.dirname(__FILE__) + "/../Dialogs/file_dialog"
+require File.dirname(__FILE__) + "/../../SaveOffs/Read/read_save"
+require File.dirname(__FILE__) + "/../../SaveOffs/Write/write_save"
 class Manage_Events
-
+ 
    def add_file
      dialog = File_Dialog.new(nil, 'Choose a .resx file!', 'RESX File (*.resx)|*.resx|')
      result = dialog.show_modal
      if result == Wx::ID_OK
-       puts "User selected file: #{dialog.get_path()}"
+      saver = Save.new(dialog.get_path())
      end
    end
 
    def on_click(id)
+      @map = Map.new.map
+      puts id
        action = @map.fetch(id)
        action.call
    end
 
    def populate_recent(choice_box)
-     
+     contents = Read.receive_file_contents
+     contents.each_index { |index|  choice_box.append(contents[index]) }
    end
 
 end
