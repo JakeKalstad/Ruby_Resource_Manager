@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + "/../Dialogs/file_dialog"
 class Manage_Events
+
    def add_file
      dialog = File_Dialog.new(nil, 'Choose a .resx file!', 'RESX File (*.resx)|*.resx|')
      result = dialog.show_modal
@@ -7,6 +8,16 @@ class Manage_Events
        puts "User selected file: #{dialog.get_path()}"
      end
    end
+
+   def on_click(id)
+       action = @map.fetch(id)
+       action.call
+   end
+
+   def populate_recent(choice_box)
+     
+   end
+
 end
 
 class ButtonIds
@@ -17,9 +28,10 @@ class ButtonIds
 end
 
 class ComponentIds
-  attr_accessor :recent_choice
+  attr_accessor :recent_choice, :recent_label
     def initialize
       @recent_choice = 3000
+      @recent_label = 3001
     end
 end
 
