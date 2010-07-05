@@ -17,8 +17,7 @@ class Read
                     index+=1
                   }
         file.close
-       puts @contents
-        @contents.each { |ele| puts ele}
+       puts  file.closed?
         return @contents
     end
 end

@@ -5,11 +5,9 @@ class Save
      @file_path = file_path_to_save
      @file_content = Array.new
      @save_location = 'saved_jobs.wtf'
-     
-      if !first_time_check
-         @file = File.open(@save_location, 'w')
-      end
+     @reader = Read.new
      append_and_write
+
   end
 
   def first_time_check
@@ -21,13 +19,14 @@ class Save
   end
 
   def append_and_write
-    contents = Read.new.receive_file_contents
+    contents = @reader.receive_file_contents
+    
+    @file = File.open(@save_location, 'w')
     content = @file_path.split("\\").last
-    @file_content << content
-    @file_content += contents
-    @file_content.each_index { |index|
-                               @file.puts @file_content[index]
-                                @file.close_write
-                              }
+    contents << content
+    contents.each_index { |index|
+                                @file.puts contents[index]
+                        }
+    @file.close
   end
 end
