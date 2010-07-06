@@ -22,7 +22,6 @@ class Resx_Reader
  end
 
   def open_and_read(file_name)
-    puts File.size(file_name)
     @file = File.open(file_name, 'r')
     @lines = @file.readlines
     @file.close

@@ -30,12 +30,12 @@ class Manage_Events
    end
 
    def populate_grid(grid)
-      @main_grid = grid
-      choice = @choice.get_string_selection
-      content = @presenter.retrieve_contents_from_choice(choice)
-      content.each_index do |index|
-        puts content[index].value
-        puts content[index].name
+        @main_grid = grid
+        @main_grid.table.clear
+        @main_grid.refresh
+        choice = @choice.get_string_selection
+        content = @presenter.retrieve_contents_from_choice(choice)
+        content.each_index do |index|
         @main_grid.set_cell_value(0, index, content[index].value.strip)
         @main_grid.set_cell_value(1, index, content[index].name)
       end
