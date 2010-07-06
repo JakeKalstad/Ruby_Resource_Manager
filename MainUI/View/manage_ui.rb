@@ -1,4 +1,5 @@
 require File.dirname(__FILE__) + "/../Model/manage_model"
+require File.dirname(__FILE__) + "/../Model/grid_helper/grid_help"
 require 'rubygems'
 require 'wx'
 
@@ -19,20 +20,21 @@ class Manage_GUI < Wx::Frame
      @panel = Wx::Panel.new(self)
      @recent_menu = Wx::Choice.new(@panel, @component_ids.recent_choice)
      @model.populate_recent(@recent_menu)
-     grid = setup_grid()
+     @grid = setup_grid()
      recent_label =  Wx::StaticText.new(@panel, @component_ids.recent_label, 'Recent Jobs')
      add_button = Wx::Button.new(@panel, @ids.add, 'Add File')
      
-     sizer = setup_sizing(add_button, grid, recent_label)
+     sizer = setup_sizing(add_button, @grid, recent_label)
      @panel.set_sizer(sizer)
    end
+
    def event_handlers
-       puts @ids.add
        evt_button(@ids.add) {
                               @model.on_click(@ids.add)
                               @recent_menu.clear
                               @model.populate_recent(@recent_menu)
                             }
+      evt_choice(@component_ids.recent_choice) { @model.populate_grid(@grid) }
    end
 
    def setup_grid

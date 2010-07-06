@@ -17,7 +17,6 @@ class Read
                     index+=1
                   }
         file.close
-       puts  file.closed?
         return @contents
     end
 end
