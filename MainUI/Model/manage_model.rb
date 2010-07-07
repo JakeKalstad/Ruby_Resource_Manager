@@ -43,9 +43,10 @@ class Manage_Events
 end
 
 class ButtonIds
-  attr_accessor :add
+  attr_accessor :add, :save
     def initialize
       @add = 2000
+      @save = 2001
     end
 end
 

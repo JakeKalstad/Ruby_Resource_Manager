@@ -20,11 +20,11 @@ class Manage_GUI < Wx::Frame
      @panel = Wx::Panel.new(self)
      @recent_menu = Wx::Choice.new(@panel, @component_ids.recent_choice)
      @model.populate_recent(@recent_menu)
-     @grid = setup_grid()
-     recent_label =  Wx::StaticText.new(@panel, @component_ids.recent_label, 'Recent Jobs')
-     add_button = Wx::Button.new(@panel, @ids.add, 'Add File')
-     
-     sizer = setup_sizing(add_button, @grid, recent_label)
+     @recent_label =  Wx::StaticText.new(@panel, @component_ids.recent_label, 'Recent Jobs')
+     @add_button = Wx::Button.new(@panel, @ids.add, 'Add File')
+     @save_button = Wx::Button.new(@panel, @ids.save, 'Save File')
+     setup_grid
+     sizer = setup_sizing
      @panel.set_sizer(sizer)
    end
 
@@ -35,22 +35,36 @@ class Manage_GUI < Wx::Frame
                               @model.populate_recent(@recent_menu)
                             }
       evt_choice(@component_ids.recent_choice) { @model.populate_grid(@grid) }
+      evt_choice(@component_ids.delete_button) { @model.delete_selection() }
    end
 
    def setup_grid
-     grid = Wx::Grid.new(@panel, @component_ids.grid_id)
-     grid.create_grid(5, 2)
-     grid.set_col_label_value(0, 'name')
-     grid.set_col_label_value(1, 'value')
-     return grid
+    @grid = Wx::Grid.new(@panel, @component_ids.grid_id)
+    @grid.create_grid(5, 2)
+    @grid.set_col_label_value(0, 'name')
+    @grid.set_col_label_value(1, 'value')
    end
 
-   def setup_sizing(add_button, grid, recent_label)
-     sizer = Wx::BoxSizer.new(Wx::VERTICAL)
-     sizer.add(recent_label, 0, 65, 0)
-     sizer.add(@recent_menu, 0, 65, 0)
-     sizer.add(add_button, 0, 0, 1)
-     sizer.add(grid)
-     return sizer
+
+
+   def setup_sizing
+       stuff_controls
+       @sizer = Wx::BoxSizer.new(Wx::VERTICAL)
+       @controls.each_index { |i| add_sizer(@controls[i]) }
+     return @sizer
    end
+
+   def stuff_controls
+     @controls = Array.new(4)
+     @controls << @recent_label
+     @controls << @recent_menu
+     @controls << @save_button
+     @controls << @add_button
+     @controls << @grid
+   end
+
+   def add_sizer(control)
+    @sizer.add(control, 0, 65, 0)
+   end
+
 end
