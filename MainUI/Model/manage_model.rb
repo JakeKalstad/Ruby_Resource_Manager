@@ -43,15 +43,16 @@ class Manage_Events
 end
 
 class ButtonIds
-  attr_accessor :add, :save
+  attr_accessor :add, :save, :delete
     def initialize
       @add = 2000
       @save = 2001
+      @delete = 2002
     end
 end
 
 class ComponentIds
-  attr_accessor :recent_choice, :recent_label, :grid_id
+  attr_accessor :recent_choice, :recent_label, :grid_id, :delete_button
     def initialize
       @recent_choice = 3000
       @recent_label = 3001

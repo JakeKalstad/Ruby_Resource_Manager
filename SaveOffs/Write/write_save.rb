@@ -1,4 +1,6 @@
 require File.dirname(__FILE__) + "/../Read/read_save"
+require File.dirname(__FILE__) + "../../../SQLite/lite_query"
+
 class Save
 
   def initialize(file_path_to_save)

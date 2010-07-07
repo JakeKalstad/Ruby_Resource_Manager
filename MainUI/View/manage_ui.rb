@@ -18,11 +18,10 @@ class Manage_GUI < Wx::Frame
 
      @map = Map.new.map
      @panel = Wx::Panel.new(self)
-     @recent_menu = Wx::Choice.new(@panel, @component_ids.recent_choice)
+     
+     create_recent_menu()
      @model.populate_recent(@recent_menu)
-     @recent_label =  Wx::StaticText.new(@panel, @component_ids.recent_label, 'Recent Jobs')
-     @add_button = Wx::Button.new(@panel, @ids.add, 'Add File')
-     @save_button = Wx::Button.new(@panel, @ids.save, 'Save File')
+     create_buttons()
      setup_grid
      sizer = setup_sizing
      @panel.set_sizer(sizer)
@@ -35,7 +34,7 @@ class Manage_GUI < Wx::Frame
                               @model.populate_recent(@recent_menu)
                             }
       evt_choice(@component_ids.recent_choice) { @model.populate_grid(@grid) }
-      evt_choice(@component_ids.delete_button) { @model.delete_selection() }
+      evt_choice(@ids.delete) { @model.delete_selection }
    end
 
    def setup_grid
@@ -45,7 +44,16 @@ class Manage_GUI < Wx::Frame
     @grid.set_col_label_value(1, 'value')
    end
 
+   def create_buttons
+     @add_button = Wx::Button.new(@panel, @ids.add, 'Add File')
+     @delete_button = Wx::Button.new(@panel, @ids.delete, 'Delete Recent')
+     @save_button = Wx::Button.new(@panel, @ids.save, 'Save File')
+   end
 
+   def create_recent_menu
+     @recent_menu = Wx::Choice.new(@panel, @component_ids.recent_choice)
+     @recent_label =  Wx::StaticText.new(@panel, @component_ids.recent_label, 'Recent Jobs')
+   end
 
    def setup_sizing
        stuff_controls
@@ -60,6 +68,7 @@ class Manage_GUI < Wx::Frame
      @controls << @recent_menu
      @controls << @save_button
      @controls << @add_button
+     @controls << @delete_button     
      @controls << @grid
    end
 
