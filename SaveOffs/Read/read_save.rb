@@ -1,22 +1,15 @@
-class Read
+require File.dirname(__FILE__) + "../../../SQLite/lite_query"
 
+class Read
+  attr_accessor :save_rows
   def initialize
-    @contents = Array.new
+    @query = LiteQuery.new
+    @displayable_data = Array.new
+    @save_rows = @query.get_saves
   end
 
-  @@save_location = 'saved_jobs.wtf'
-    def receive_file_contents
-      if !File.exist?(@@save_location)
-          File.new(@@save_location, 'w')
-      end
-
-        file = File.open(@@save_location, 'r')
-        index = 0
-        file.each { |line|
-                    @contents[index] = line
-                    index+=1
-                  }
-        file.close
-        return @contents
-    end
+  def project_displayable_contents
+    @save_rows.each_index { |i| @displayable_data << @save_rows[i][2].split("\\").last }
+    return @displayable_data
+  end
 end

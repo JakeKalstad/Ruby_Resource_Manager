@@ -3,28 +3,16 @@ require File.dirname(__FILE__) + '/../../Parser/node_manufacturer'
 
 class ResxPresenter
 
-   def retrieve_contents_from_path(path)
-     return retrieve_contents(path)
-   end
-
-   def retrieve_contents_from_choice(choice_selection)
-     @hot_word = choice_selection
-     self.locate_file_and_retrieve_contents
-     return @list
-   end
-
-   def locate_file_and_retrieve_contents
-      @save_file = Read.new.receive_file_contents
-      @content = @save_file.each_index { |i|
-                                             if @save_file[i].include?(@hot_word)
-                                                  @path =  @save_file[i]
-                                             end
-                                       }
-      retrieve_contents(@path)
-   end
-
-   def retrieve_contents(path)
-    @manufacturer = Node_Manufacturer.new(path.tr_s('\\','/').to_s)
-    @list =  @manufacturer.resource_tuple_list
+   def retrieve_from_choice(choice_selection)
+     @values = Array.new
+     resources = LiteQuery.new.get_resource_from_current_choice(choice_selection)
+     p resources
+     resources.each_index { |i|
+                                 @display_item = Struct.new(:name, :value).new
+                                 @display_item.name = resources[i][2]
+                                 @display_item.value = resources[i][3]
+                                 @values << @display_item
+                          }
+     return @values
    end
 end

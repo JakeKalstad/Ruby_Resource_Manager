@@ -6,11 +6,6 @@ class LiteQuery
         @data_base = Connection.new.data_base
      end
 
-     def raw_query(query)
-       return if !@data_base.complete? query    #SOMEBODY SAVE ME FROM MYSELF
-       @data_base.execute(query)
-     end
-
      def insert_resource_values_to_set(set, name, value)
          @data_base.execute("insert into resource_pairs values (?, ?, ?, ?)" , 666, set, name, value)
      end
@@ -20,7 +15,7 @@ class LiteQuery
      end
 
      def insert_save(file)
-          @data_base.execute("insert into save values (?,?)", 6667, file)
+          @data_base.execute("insert into save values (?,?,?)", 666, 1, file)
      end
 
      def remove_save_by_name(save_file)
@@ -39,8 +34,20 @@ class LiteQuery
        return @data_base.execute('select * from resource_pairs')
      end
 
-     def get_resource_set(set)
-       return @data_base.execute("select * from resource_pairs where resx_set_key == #{set}")
+     def get_resource_set(set_key)
+       return @data_base.execute("select * from resource_pairs where resx_set_key == #{set_key}")
+     end
+
+     def get_resource_from_current_choice(recent_choice)
+        @key = save_set(recent_choice)
+        @resources = get_resource_set(@key)
+        return @resources
+     end
+
+     def save_set(save)
+       saves = @data_base.execute("select * from save")
+       saves.each_index { |i| @set_key = saves[i][1] if saves[i][2].include? save }
+       @set_key
      end
 
      def get_saves

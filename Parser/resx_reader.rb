@@ -1,7 +1,7 @@
 class Resx_Reader
 
   def initialize(file_name)
-    @name = file_name.strip
+    @name = File.new(file_name).path
   end
   def read_lines
    open_and_read(@name)
@@ -22,6 +22,7 @@ class Resx_Reader
  end
 
   def open_and_read(file_name)
+    puts File.size(file_name)
     @file = File.open(file_name, 'r')
     @lines = @file.readlines
     @file.close
@@ -33,5 +34,7 @@ class Resx_Reader
                          return false
                          end
                       }
+
+
   end
 end

@@ -25,8 +25,9 @@ class Manage_Events
 
    def populate_recent(choice_box)
      @choice = choice_box
-     contents = Read.new.receive_file_contents
-     contents.each_index { |index|  @choice.append(contents[index].split("\\").last) }
+     contents = Read.new.project_displayable_contents
+     return if contents == nil
+     contents.each_index { |index| @choice.append(contents[index]) }
    end
 
    def populate_grid(grid)
@@ -34,10 +35,10 @@ class Manage_Events
         @main_grid.table.clear
         @main_grid.refresh
         choice = @choice.get_string_selection
-        content = @presenter.retrieve_contents_from_choice(choice)
+        content = @presenter.retrieve_from_choice(choice)
         content.each_index do |index|
-        @main_grid.set_cell_value(0, index, content[index].value.strip)
-        @main_grid.set_cell_value(1, index, content[index].name)
+        @main_grid.set_cell_value(index, 1, content[index].value.strip)
+        @main_grid.set_cell_value(index, 0, content[index].name)
       end
    end
 end
