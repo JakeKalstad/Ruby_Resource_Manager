@@ -9,7 +9,7 @@ class Read
   end
 
   def project_displayable_contents
-    @save_rows.each_index { |i| @displayable_data << @save_rows[i][2].split("\\").last }
+    @save_rows.each_index { |i| @displayable_data << @save_rows[i][3].split("\\").last }
     return @displayable_data
   end
 end
