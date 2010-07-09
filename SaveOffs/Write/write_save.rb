@@ -1,4 +1,5 @@
 require File.dirname(__FILE__) + "../../../SQLite/lite_query"
+require File.dirname(__FILE__) + "../../../SQLIte/table_extension"
 
 class Save
 
@@ -13,7 +14,7 @@ class Save
   def update_database
     @query.insert_save(@path)
     @tuples = Node_Manufacturer.new(@path).resource_tuple_list
-    @tuples.each_index { |i| @query.insert_resource_values(@tuples[i][0], @tuples[i][1]) }
+    @tuples.each_index { |i| @query.insert_resource_values(Table_Extension.get_resource_tuple_name(@tuples[i]), Table_Extension.get_resource_tuple_value(@tuples[i])) }
   end
 
   def table_already_contains_path

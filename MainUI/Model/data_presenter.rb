@@ -9,8 +9,8 @@ class ResxPresenter
      p resources
      resources.each_index { |i|
                                  @display_item = Struct.new(:name, :value).new
-                                 @display_item.name = resources[i][2]
-                                 @display_item.value = resources[i][3]
+                                 @display_item.name = Table_Extension.get_resource_name(resources,i)
+                                 @display_item.value = Table_Extension.get_resource_value(resources,i)
                                  @values << @display_item
                           }
      return @values
