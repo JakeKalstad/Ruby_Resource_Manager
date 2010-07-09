@@ -24,16 +24,16 @@ class LiteQuery
      def remove_save_by_name(save_file)
         file = save_file.split(' ')[0]
        p file
-         @data_base.execute("Delete from save WHERE save_file = \"" "#{file}"\"")
+         @data_base.execute("Delete from save WHERE save_file == ?",/%file%"/)
          p get_saves[1][3]
      end
 
      def remove_save_by_key(key)
-        @data_base.execute("delete from save where save_key == #{key}")
+        @data_base.execute("delete from save where save_key == ?", key)
      end
 
      def update_resource_values(id, field, value)
-        @data_base.execute("update resource_pairs where resource_key == id set #{field} = #{value}")
+        @data_base.execute("update resource_pairs where resource_key == ? set ? == ?", id, field, value)
      end
 
      def get_all_resources
@@ -41,7 +41,7 @@ class LiteQuery
      end
 
      def get_resource_set(set_key)
-       return @data_base.execute("select * from resource_pairs where resx_set_key == #{set_key}")
+       return @data_base.execute("select * from resource_pairs where resx_set_key == ?",set_key)
      end
 
      def save_set(save)
