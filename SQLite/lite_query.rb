@@ -22,22 +22,23 @@ class LiteQuery
      end
 
      def remove_save_by_name(save_file)
-        file = save_file.split(' ')[0]
-<<<<<<< HEAD
-       p file
-         @data_base.execute("Delete from save WHERE save_file == ?",/%file%"/)
-=======
-         @data_base.execute("Delete from save WHERE save_file == ?", file)
->>>>>>> 95f799ebfda60b76559062e1a7bb8c77264e7e58
-         p get_saves[1][3]
+         file = save_file.split(' ')[0]
+         saves = @data_base.execute("select * from save")
+         p saves
+         saves.each_index { |i|  if Table_Extension.get_save_display_string(saves, i).include? file
+                                                @key = Table_Extension.get_save_key(saves, i)
+                                  end
+                            }
+         remove_save_by_key(@key)
      end
 
      def remove_save_by_key(key)
-        @data_base.execute("delete from save where save_key == ?", key)
+       p key
+       @data_base.execute("update save set save_key = 666 where save_key == ?", key)
      end
 
      def update_resource_values(id, field, value)
-        @data_base.execute("update resource_pairs where resource_key == ? set ? == ?", id, field, value)
+        @data_base.execute("update resource_pairs where resource_key == ? set ? = ?", id, field, value)
      end
 
      def get_all_resources
@@ -45,11 +46,7 @@ class LiteQuery
      end
 
      def get_resource_set(set_key)
-<<<<<<< HEAD
        return @data_base.execute("select * from resource_pairs where resx_set_key == ?",set_key)
-=======
-       return @data_base.execute("select * from resource_pairs where resx_set_key == ?", set_key)
->>>>>>> 95f799ebfda60b76559062e1a7bb8c77264e7e58
      end
 
     def save_set(save)
@@ -59,7 +56,7 @@ class LiteQuery
      end
 
      def get_saves
-       return @data_base.execute('select * from save')
+       return @data_base.execute('select * from save where save_key != 666')
      end
 
      def get_unattached_save
@@ -70,7 +67,6 @@ class LiteQuery
      def get_resource_from_current_choice(recent_choice)
         @key = save_set(recent_choice)
         @resources = get_resource_set(@key)
-        p @resources
         return @resources
      end
 

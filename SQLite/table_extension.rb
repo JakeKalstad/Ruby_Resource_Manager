@@ -1,4 +1,5 @@
 class Table_Extension
+
    def self.get_resource_name(resource, index)
      return resource[index][3]
    end
@@ -15,7 +16,15 @@ class Table_Extension
     return tuple[1]
   end
 
-  def self.get_save_display_string(save, index)
-    return save[index][3].split("\\")
+  def self.get_save_display_string(saves, index)
+    return saves[index][3].split("\\")
+  end
+
+  def self.get_save_key(saves, index)
+    return saves[index][0]
+  end
+
+  def self.get_save_file(saves, index)
+    return saves[index][3]
   end
 end
