@@ -7,14 +7,10 @@ class Resx_Reader
    open_and_read(@name)
 
    if is_valid_resx
-     p 'tis valid'
      if !is_empty
-       p 'win'
         return @lines
      end
-    p 'empty'
    end
-   p 'not valid'
    return Array.new
  end
 
@@ -26,9 +22,11 @@ class Resx_Reader
  end
 
   def open_and_read(file_name)
+    p file_name
     puts File.size(file_name)
     @file = File.open(file_name, 'r')
     @lines = @file.readlines
+    p @lines
     @file.close
   end
 
@@ -38,7 +36,5 @@ class Resx_Reader
                          return false
                          end
                       }
-
-
   end
 end
