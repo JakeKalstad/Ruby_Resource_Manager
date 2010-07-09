@@ -43,7 +43,18 @@ class LiteQuery
      def get_resource_set(set_key)
        return @data_base.execute("select * from resource_pairs where resx_set_key == ?", set_key)
      end
- def save_set(save)
+
+<<<<<<< HEAD
+     def get_resource_from_current_choice(recent_choice)
+        @key = save_set(recent_choice)
+        @resources = get_resource_set(@key)
+         p @resources
+        return @resources
+     end
+
+=======
+>>>>>>> 206af9716778462d55b721a2253f80b422d40c36
+     def save_set(save)
        saves = get_saves
        saves.each_index { |i| @set_key = saves[i][2] if saves[i][3].include? save }
        @set_key

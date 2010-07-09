@@ -10,8 +10,12 @@ class Read
   end
 
   def project_displayable_contents
+<<<<<<< HEAD
     @save_rows.each_index { |i| @displayable_data <<  Table_Extension.get_save_display_string(@save_rows, i).last }
     p @displayable_data
+=======
+    @save_rows.each_index { |i| @displayable_data << @save_rows[i][3].split("\\").last }
+>>>>>>> 206af9716778462d55b721a2253f80b422d40c36
     return @displayable_data
   end
 end

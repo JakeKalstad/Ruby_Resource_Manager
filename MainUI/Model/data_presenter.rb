@@ -5,6 +5,7 @@ class ResxPresenter
 
    def retrieve_from_choice(choice_selection)
      @values = Array.new
+     return if choice_selection == ""
      resources = LiteQuery.new.get_resource_from_current_choice(choice_selection)
      resources.each_index { |i|
                                  @display_item = Struct.new(:name, :value).new
