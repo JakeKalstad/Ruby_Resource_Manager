@@ -7,10 +7,14 @@ class Resx_Reader
    open_and_read(@name)
 
    if is_valid_resx
+     p 'tis valid'
      if !is_empty
+       p 'win'
         return @lines
      end
+    p 'empty'
    end
+   p 'not valid'
    return Array.new
  end
 

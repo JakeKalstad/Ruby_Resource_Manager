@@ -13,7 +13,9 @@ class Save
   
   def update_database
     @query.insert_save(@path)
+    p 'hm...'
     @tuples = Node_Manufacturer.new(@path).resource_tuple_list
+    p @tuples
     @tuples.each_index { |i| @query.insert_resource_values(Table_Extension.get_resource_tuple_name(@tuples[i]), Table_Extension.get_resource_tuple_value(@tuples[i])) }
   end
 

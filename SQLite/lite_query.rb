@@ -35,12 +35,13 @@ class LiteQuery
      end
 
      def get_resource_set(set_key)
-       return @data_base.execute("select * from resource_pairs where resx_set_key == #{set_key}")
+       return @data_base.execute("select * from resource_pairs where resx_set_key == ?", set_key)
      end
 
      def get_resource_from_current_choice(recent_choice)
         @key = save_set(recent_choice)
         @resources = get_resource_set(@key)
+         p @resources
         return @resources
      end
 
