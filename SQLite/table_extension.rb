@@ -1,10 +1,10 @@
 class Table_Extension
    def self.get_resource_name(resource, index)
-     return resource[index][2]
+     return resource[index][3]
    end
 
   def self.get_resource_value(resource, index)
-     return resource[index][3]
+     return resource[index][4]
   end
 
   def self.get_resource_tuple_name(tuple)
@@ -16,6 +16,6 @@ class Table_Extension
   end
 
   def self.get_save_display_string(save, index)
-    return save[index][2].split("\\")
+    return save[index][3].split("\\")
   end
 end

@@ -23,8 +23,7 @@ class LiteQuery
 
      def remove_save_by_name(save_file)
         file = save_file.split(' ')[0]
-       p file
-         @data_base.execute("Delete from save WHERE save_file = \"" "#{file}"\"")
+         @data_base.execute("Delete from save WHERE save_file == ?", file)
          p get_saves[1][3]
      end
 
@@ -43,7 +42,8 @@ class LiteQuery
      def get_resource_set(set_key)
        return @data_base.execute("select * from resource_pairs where resx_set_key == ?", set_key)
      end
- def save_set(save)
+
+    def save_set(save)
        saves = get_saves
        saves.each_index { |i| @set_key = saves[i][2] if saves[i][3].include? save }
        @set_key
@@ -54,10 +54,8 @@ class LiteQuery
      end
 
      def get_unattached_save
-      return @data_base.execute("SELECT save_key
-                                FROM save
-                                INNER JOIN
-                                ON resource_pairs.save_key == save.save_key")
+      return @data_base.execute("SELECT save_key FROM save, resource_pairs
+                                WHERE resource_pairs.save_Fkey == save.save_key")
      end
 
      def get_resource_from_current_choice(recent_choice)

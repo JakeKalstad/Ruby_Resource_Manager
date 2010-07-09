@@ -14,12 +14,9 @@ class Save
   
   def update_database
     @query.insert_save(@path, @current_set)
-    p 'hm...'
+    @save_id = @query.get_unattached_save
     @tuples = Node_Manufacturer.new(@path).resource_tuple_list
-    p @tuples
-    @tuples.each_index { |i| @query.insert_resource_values(Table_Extension.get_resource_tuple_name(@tuples[i]), Table_Extension.get_resource_tuple_value(@tuples[i])) }
-    p @current_set
-    p @tuples
+    @tuples.each_index { |i| @query.insert_resource_values(Table_Extension.get_resource_tuple_name(@tuples, i), Table_Extension.get_resource_tuple_value(@tuples, i)) }
     @tuples.each_index { |i| @query.insert_resource_values_to_set(@save_id, @current_set, @tuples[i][0], @tuples[i][1]) }
   end
 
