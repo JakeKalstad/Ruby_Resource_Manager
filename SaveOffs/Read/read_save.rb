@@ -1,7 +1,8 @@
 require File.dirname(__FILE__) + "../../../SQLite/lite_query"
+require File.dirname(__FILE__) + "../../../SQLIte/table_extension"
 
 class Read
-  attr_accessor :save_rows
+
   def initialize
     @query = LiteQuery.new
     @displayable_data = Array.new
@@ -9,7 +10,8 @@ class Read
   end
 
   def project_displayable_contents
-    @save_rows.each_index { |i| @displayable_data << @save_rows[i][3].split("\\").last }
+    @save_rows.each_index { |i| @displayable_data <<  Table_Extension.get_save_display_string(@save_rows, i).last }
+    p @displayable_data
     return @displayable_data
   end
 end
