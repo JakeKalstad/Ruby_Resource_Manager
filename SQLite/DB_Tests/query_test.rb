@@ -1,5 +1,6 @@
 class Tester
 ###TEST#####TEST####TEST########TEST#########
+
   def initialize
 @query = LiteQuery.new
 file_path = "C:/Users/Jake/VIsual Studio 2010/Projects/ResourceManager/resource_manager.resx"

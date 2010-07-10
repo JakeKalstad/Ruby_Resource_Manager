@@ -8,8 +8,9 @@ class Save
      @current_set = current_set
      @query = LiteQuery.new
      if !table_already_contains_path
-       update_database()
+        return update_database
      end
+     reload_feign_data;
   end
   
   def update_database
@@ -22,7 +23,18 @@ class Save
 
   def table_already_contains_path
     previous_saves = @query.get_saves
-    previous_saves.each_index { |i| @existent = true if previous_saves[i].include? @path }
+    previous_saves.each_index { |i|
+                                    if previous_saves[i].include? @path
+                                        @existent = true
+                                        @deleted_resource = Table_Extension.get_save_file(previous_saves, i)
+                                     end
+                               }
     return @existent
   end
+
+  def reload_feign_data
+     return if @deleted_resource == nil
+     return @deleted_resource
+  end
+
 end
