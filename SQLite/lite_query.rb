@@ -14,9 +14,9 @@ class LiteQuery
 
      def insert_resource_values(save_id, name, value)
            find_highest_resource_id
-          save_id = @highest if save_id == nil
+          save_id = @highest if save_id.empty? || save_id == nil
           @data_base.execute("update save set active_save = 1 where resource_key == ?", @highest)
-          @data_base.execute("insert into resource_pairs values (?, ?, ?, ?, ?)", @highest, save_id, 1, name, value)   
+          @data_base.execute("insert into resource_pairs values (?,?,?,?,?)", @highest, save_id, 1, name, value)   
      end
 
      def update_deleted_save(key)
@@ -60,17 +60,18 @@ class LiteQuery
        return @data_base.execute('select * from resource_pairs')
      end
 
-     def get_resource_set
-       return @data_base.execute("select * from resource_pairs where resx_set_key == ?", @key)
+     def get_resources
+       return @data_base.execute("select * from resource_pairs where save_Fkey == ?", @key)
      end
 
 
      def save_set(save)
        saves = get_saves
-       saves.each_index { |i| if (saves[i][3].include?(save) && saves[i][4])
-                                @set_key = saves[i][2] 
+       saves.each_index { |i| if saves[i][3].include?(save)
+                                @save_key = saves[i][0]
                               end
                         }
+       return @save_key
      end
 
      def resource_exists(value)
@@ -92,8 +93,8 @@ class LiteQuery
      end
 
      def get_resource_from_current_choice(recent_choice)
-        @key = save_set(recent_choice)[2]
-        @resources = get_resource_set
+        @key = save_set(recent_choice)
+        @resources = get_resources
         return @resources
      end
 

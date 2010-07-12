@@ -4,11 +4,9 @@
     <list default="true" readonly="true" id="56595010-551f-40c5-a7af-6c9007c5567a" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Controller\resource.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/table_extension.rb" afterPath="$PROJECT_DIR$/SQLite/table_extension.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/lite_query.rb" afterPath="$PROJECT_DIR$/SQLite/lite_query.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" afterPath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
       <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\resource.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Controller/setup_db.rb" afterPath="$PROJECT_DIR$/MainUI/Controller/setup_db.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" afterPath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" afterPath="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" />
     </list>
     <ignored path="ResourceManager.iws" />
@@ -33,10 +31,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lite_query.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+      <file leaf-file-name="setup_db.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Controller/setup_db.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="36" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
+            <state line="4" column="98" selection-start="191" selection-end="200" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,7 +52,7 @@
       <file leaf-file-name="write_save.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+            <state line="43" column="44" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,19 +67,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_presenter.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="data_presenter.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+            <state line="13" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.5121951">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_save.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SaveOffs/Read/read_save.rb">
+      <file leaf-file-name="lite_query.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="163" selection-start="459" selection-end="459" vertical-scroll-proportion="0.47191012">
+            <state line="58" column="52" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_model.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="41" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +97,16 @@
       <file leaf-file-name="table_extension.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQLite/table_extension.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="33" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+            <state line="12" column="45" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_driver.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,10 +126,10 @@
         <option value="$PROJECT_DIR$/SQLite/DB_Tests/query_test.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
         <option value="$PROJECT_DIR$/MainUI/Controller/setup_db.rb" />
-        <option value="$PROJECT_DIR$/SQLite/lite_query.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
         <option value="$PROJECT_DIR$/SQLite/table_extension.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" />
+        <option value="$PROJECT_DIR$/SQLite/lite_query.rb" />
       </list>
     </option>
   </component>
@@ -144,7 +160,56 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="Favorites" />
@@ -282,17 +347,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23290938" sideWeight="0.6628308" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23290938" sideWeight="0.6628308" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39700806" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33026466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -334,7 +399,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
-          <line>77</line>
+          <line>78</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
@@ -343,6 +408,10 @@
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb</url>
           <line>41</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
+          <line>17</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -353,23 +422,9 @@
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.0-x86-mswin32-60/lib/sqlite3/database.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="12" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.4943609">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.118421055">
           <folding />
         </state>
       </provider>
@@ -388,30 +443,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Controller/setup_db.rb">
+    <entry file="file://$PROJECT_DIR$/SaveOffs/Read/read_save.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="432" selection-end="432" vertical-scroll-proportion="0.1521739">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="36" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+        <state line="12" column="163" selection-start="459" selection-end="459" vertical-scroll-proportion="0.47191012">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/wxruby-2.0.1-x86-mswin32-60/lib/wx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="73" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.401222">
+        <state line="48" column="0" selection-start="1619" selection-end="1619" vertical-scroll-proportion="1.2464359">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_events.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="31" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -425,28 +473,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="629" selection-end="629" vertical-scroll-proportion="0.31771895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+        <state line="44" column="41" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLite/table_extension.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+        <state line="12" column="45" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SaveOffs/Read/read_save.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="163" selection-start="459" selection-end="459" vertical-scroll-proportion="0.47191012">
+        <state line="3" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="44" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/setup_db.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="98" selection-start="191" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="52" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.5121951">
           <folding />
         </state>
       </provider>
