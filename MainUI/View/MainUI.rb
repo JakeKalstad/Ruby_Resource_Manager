@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + "/../Model/main_events"
+require File.dirname(__FILE__) + "/../Model/main_model"
 require File.dirname(__FILE__) + "/../Event_Maps/event_map"
 require File.dirname(__FILE__) + "/../Enums/EventIds"
 

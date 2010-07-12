@@ -9,7 +9,7 @@ class Manage_GUI < Wx::Frame
 
    def initialize
       super(nil, :id => -1, :title => 'Manage .resx Files', :size => Wx::Size.new(850,600))
-      @model = Manage_Events.new
+      @model = Events::Manage_Events.new
       initialize_components
       event_handlers
    end
