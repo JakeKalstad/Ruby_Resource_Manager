@@ -48,9 +48,7 @@ class Manage_GUI < Wx::Frame
                                   @model.populate_grid(@grid)
                                }
 
-        evt_button(@ids.save)  {
-
-                               }
+        evt_button(@ids.save)  { @model.save_file(@recent_menu)}
    end
 
    def setup_grid
@@ -79,7 +77,7 @@ class Manage_GUI < Wx::Frame
    end
 
    def stuff_controls
-     @controls = Array.new(4)
+     @controls = Array.new(6)
      @controls << @recent_label
      @controls << @recent_menu
      @controls << @save_button
