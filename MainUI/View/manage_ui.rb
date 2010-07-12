@@ -32,12 +32,14 @@ class Manage_GUI < Wx::Frame
                               @model.on_click(@ids.add)
                               @recent_menu.clear
                               @model.populate_recent(@recent_menu)
+                              @model.populate_grid(@grid)
                             }
       evt_choice(@component_ids.recent_choice) { @model.populate_grid(@grid) }
       evt_button(@ids.delete)  {
                                   @model.remove_file(@recent_menu)
                                   @recent_menu.clear
                                   @model.populate_recent(@recent_menu)
+                                  @model.populate_grid(@grid)
                                 }
    end
 
