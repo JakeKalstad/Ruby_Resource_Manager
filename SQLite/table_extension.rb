@@ -24,6 +24,14 @@ class Table_Extension
     return saves[index][0]
   end
 
+   def self.is_active_save(saves, index)
+      return saves[index][4] == 1 
+   end
+
+   def self.get_save_resource_key(saves, index)
+    return saves[index][1]
+  end
+
   def self.get_save_file(saves, index)
     return saves[index][3]
   end

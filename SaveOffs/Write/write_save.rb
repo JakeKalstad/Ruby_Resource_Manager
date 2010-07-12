@@ -14,11 +14,17 @@ class Save
   end
   
   def update_database
-    @query.insert_save(@path, @current_set)
     @save_id = @query.get_unattached_save
+    @query.insert_save(@path, @current_set)
+
     @tuples = Node_Manufacturer.new(@path).resource_tuple_list
-    @tuples.each_index { |i| @query.insert_resource_values(@save_id, Table_Extension.get_resource_tuple_name(@tuples[i]), Table_Extension.get_resource_tuple_value(@tuples[i])) }
-    @tuples.each_index { |i| @query.insert_resource_values_to_set(@save_id, @current_set, @tuples[i][0], @tuples[i][1]) }
+
+    @tuples.each_index { |i|
+      return if @query.resource_exists(Table_Extension.get_resource_tuple_value(@tuples[i]))
+
+      @query.insert_resource_values(@save_id, Table_Extension.get_resource_tuple_name(@tuples[i]),
+                                            Table_Extension.get_resource_tuple_value(@tuples[i]))
+                       }
   end
 
   def table_already_contains_path
@@ -26,15 +32,15 @@ class Save
     previous_saves.each_index { |i|
                                     if previous_saves[i].include? @path
                                         @existent = true
-                                        @deleted_resource = Table_Extension.get_save_file(previous_saves, i)
+                                        @deleted_key = Table_Extension.get_save_key(previous_saves, i)
                                      end
                                }
     return @existent
   end
 
   def reload_feign_data
-     return if @deleted_resource == nil
-     return @deleted_resource
+     return if @deleted_key == nil
+     @query.update_deleted_save(@deleted_key)
   end
 
 end
