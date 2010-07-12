@@ -1,22 +1,24 @@
 require File.dirname(__FILE__) + "/../Model/manage_model"
-require File.dirname(__FILE__) + "/../Model/grid_helper/grid_help"
+require File.dirname(__FILE__) + "/../Enums/manage_buttons"
+require File.dirname(__FILE__) + "/../Enums/manage_components"
+require File.dirname(__FILE__) + "/../Event_Maps/manage_events"
 require 'rubygems'
 require 'wx'
 
 class Manage_GUI < Wx::Frame
 
    def initialize
-      super(nil,-1,'Manage .resx Files')
+      super(nil, :id => -1, :title => 'Manage .resx Files', :size => Wx::Size.new(850,600))
       @model = Manage_Events.new
-      initialize_components()
-      event_handlers()
+      initialize_components
+      event_handlers
    end
 
    def initialize_components
      @ids = ButtonIds.new
      @component_ids = ComponentIds.new
 
-     @map = Map.new.map
+     @map = Map.new(@model).map
      @panel = Wx::Panel.new(self)
      
      create_recent_menu()
@@ -34,13 +36,21 @@ class Manage_GUI < Wx::Frame
                               @model.populate_recent(@recent_menu)
                               @model.populate_grid(@grid)
                             }
-      evt_choice(@component_ids.recent_choice) { @model.populate_grid(@grid) }
+      evt_choice(@component_ids.recent_choice) {
+                                                  @model.populate_grid(@grid)
+                                                  @grid.auto_size
+                                                  set_size(get_size+1)  #h@kz0r to recenter the grid ƒü?X this when possible'
+                                               }
       evt_button(@ids.delete)  {
                                   @model.remove_file(@recent_menu)
                                   @recent_menu.clear
                                   @model.populate_recent(@recent_menu)
                                   @model.populate_grid(@grid)
-                                }
+                               }
+
+        evt_button(@ids.save)  {
+
+                               }
    end
 
    def setup_grid

@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + '/../view/manage_ui'
 require File.dirname(__FILE__) + '/../view/translate_ui'
+require File.dirname(__FILE__) + '/../Event_Maps/event_map'
 require 'rubygems'
 require 'wx'
 

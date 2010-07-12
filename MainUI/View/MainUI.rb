@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + "/../Model/main_events"
-require File.dirname(__FILE__) + "/../Model/EventIds"
-require File.dirname(__FILE__) + "/../Model/event_map"
+require File.dirname(__FILE__) + "/../Event_Maps/event_map"
+require File.dirname(__FILE__) + "/../Enums/EventIds"
+
 require 'rubygems'
 require 'wx'
 
@@ -11,7 +12,7 @@ class MainForm < Wx::App
       def on_init()
         wire_events()
 
-        @frame = Wx::Frame.new(nil, -1, 'Resource Manager')
+        @frame = Wx::Frame.new(nil, :id => -1, :title => 'Resource Manager')
 
         menu_bar = create_menu(@event_ids)
         @frame.set_menu_bar( menu_bar )

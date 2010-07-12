@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + "/../Model/EventIds"
+require File.dirname(__FILE__) + "/../Enums/EventIds"
 
 module Mapping
   class EventMap

@@ -2,6 +2,7 @@ require File.dirname(__FILE__) + "/../Dialogs/file_dialog"
 require File.dirname(__FILE__) + "/../../SaveOffs/Read/read_save"
 require File.dirname(__FILE__) + "/../../SaveOffs/Write/write_save"
 require File.dirname(__FILE__) + "/data_presenter"
+require File.dirname(__FILE__) + "/../Event_Maps/manage_events"
 require File.dirname(__FILE__) + "../../../SQLite/lite_query"
 
 class Manage_Events
@@ -24,8 +25,12 @@ class Manage_Events
      @query.remove_save_by_name(choice_box.get_string_selection)
    end
 
+   def save_file(choice_box, grid_contents)
+
+   end
+
    def on_click(id)
-       @map = Map.new.map
+       @map = Map.new(self).map
        action = @map.fetch(id)
        action.call
    end
@@ -35,6 +40,10 @@ class Manage_Events
      contents = Read.new.project_displayable_contents
      return if contents == nil
      contents.each_index { |index| @choice.append(contents[index]) }
+   end
+
+   def save_file()
+     
    end
 
    def populate_grid(grid)
@@ -49,33 +58,4 @@ class Manage_Events
         @main_grid.set_cell_value(index, 0, content[index].name)
       end
    end
-end
-
-class ButtonIds
-  attr_accessor :add, :save, :delete
-    def initialize
-      @add = 2000
-      @save = 2001
-      @delete = 2002
-    end
-end
-
-class ComponentIds
-  attr_accessor :recent_choice, :recent_label, :grid_id, :delete_button
-    def initialize
-      @recent_choice = 3000
-      @recent_label = 3001
-      @grid_id = 3002
-    end
-end
-
-class Map
-   attr_accessor :map
-
-     def initialize()
-        events = Manage_Events.new
-        ids = ButtonIds.new
-        @map = Hash.new
-        @map[ids.add] = proc { events.add_file }
-     end
 end
