@@ -13,9 +13,8 @@ class LiteQuery
      end
 
      def insert_resource_values(save_id, name, value)
-           find_highest_resource_id
           save_id = @highest if save_id.empty? || save_id == nil
-          @data_base.execute("update save set active_save = 1 where resource_key == ?", @highest)
+          @data_base.execute("update save set active_save = 1 where resource_key == ?", save_id)
           @data_base.execute("insert into resource_pairs values (?,?,?,?,?)", @highest, save_id, 1, name, value)   
      end
 

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="56595010-551f-40c5-a7af-6c9007c5567a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Controller\resource.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/lite_query.rb" afterPath="$PROJECT_DIR$/SQLite/lite_query.rb" />
-      <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\resource.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" afterPath="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
+      <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\resource.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" afterPath="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" />
     </list>
     <ignored path="ResourceManager.iws" />
@@ -67,19 +66,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_presenter.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="data_presenter.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.5121951">
+            <state line="17" column="31" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lite_query.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lite_query.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="52" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.33333334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.0-x86-mswin32-60/lib/sqlite3/database.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="0" selection-start="4585" selection-end="4585" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -347,16 +355,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23290938" sideWeight="0.6628308" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39700806" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23290938" sideWeight="0.5949367" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39700806" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -399,19 +407,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
-          <line>78</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
-          <line>29</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb</url>
-          <line>41</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/SQLite/lite_query.rb</url>
-          <line>17</line>
+          <line>16</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -420,13 +416,6 @@
     <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/file_dialog.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.0-x86-mswin32-60/lib/sqlite3/database.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="12" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.4943609">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.0-x86-mswin32-60/lib/sqlite3/statement.rb">
@@ -506,16 +495,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="52" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+        <state line="17" column="31" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/data_presenter.rb">
+    <entry file="file://C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.0-x86-mswin32-60/lib/sqlite3/database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.5121951">
+        <state line="124" column="0" selection-start="4585" selection-end="4585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
