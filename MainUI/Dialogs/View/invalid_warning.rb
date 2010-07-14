@@ -6,18 +6,26 @@ class Invalid_Warning < Wx::Frame
 
   def initialize_components
        @panel = Wx::Panel.new(self)
-       @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => 'The file you are trying to save is invalid, remember (.resx!)', :size => Wx::Size.new(250, 20))
+       @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => info, :size => Wx::Size.new(250, 20))
        create_buttons
        @panel.set_sizer(setup_sizing)
   end
 
-   def create_buttons
+  def create_buttons
      @fixit_button = Wx::Button.new(@panel, 2, 'Resolve it!')
      @exit_button = Wx::Button.new(@panel, 3, 'Forget it!')
-   end
+  end
 
-   def setup_sizing
-       stuff_controls
+  def button_events
+    evt_btn(2){self.hide}
+    evt_btn(3){
+                
+                self.hide
+              }
+  end
+
+  def setup_sizing
+  stuff_controls
        @sizer = Wx::BoxSizer.new(Wx::VERTICAL)
        @controls.each_index { |i| add_sizer(@controls[i]) }
      return @sizer

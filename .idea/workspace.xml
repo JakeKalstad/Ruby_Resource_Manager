@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="56595010-551f-40c5-a7af-6c9007c5567a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Dialogs/save_dialog.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/save_dialog.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Jake.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jake.xml" />
+      <change type="MOVED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Dialogs\invalid_warning.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Dialogs/save_model.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/save_model.rb" />
-      <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\resource.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Controller/main_driver.rb" afterPath="$PROJECT_DIR$/MainUI/Controller/main_driver.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MainUI/Dialogs/overwrite_warning.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb" />
+      <change type="DELETED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Dialogs\save_model.rb" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Dialogs\overwrite_warning.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Controller/resource.db" afterPath="$PROJECT_DIR$/MainUI/Controller/resource.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/table_extension.rb" afterPath="$PROJECT_DIR$/SQLite/table_extension.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/lite_query.rb" afterPath="$PROJECT_DIR$/SQLite/lite_query.rb" />
+      <change type="MOVED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Dialogs\save_dialog.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb" />
+      <change type="MOVED" beforePath="C:\Users\Jake\RubymineProjects\ResourceManager\MainUI\Dialogs\file_dialog.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/file_dialog.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb" afterPath="$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Model/manage_model.rb" afterPath="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="ResourceManager.iws" />
@@ -32,91 +37,46 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manage_model.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_model.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Model/main_model.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="13" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="save_dialog.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/save_dialog.rb">
+        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="110" selection-start="266" selection-end="369" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_button.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Enums/save_button.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+            <state line="26" column="16" selection-start="870" selection-end="880" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="save_model.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/save_model.rb">
+        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+            <state line="9" column="2" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resx_creator.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb">
+      <file leaf-file-name="invalid_warning.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.09409594">
+            <state line="1" column="2" selection-start="36" selection-end="36" vertical-scroll-proportion="0.030411448">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invalid_warning.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/invalid_warning.rb">
+      <file leaf-file-name="file_dialog.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/file_dialog.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="6" selection-end="21" vertical-scroll-proportion="0.0">
+            <state line="3" column="12" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainUI.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
+      <file leaf-file-name="manage_model.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="32" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_map.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Event_Maps/event_map.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overwrite_warning.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/overwrite_warning.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="201" selection-end="1083" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,22 +92,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MainUI/Model/main_model.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Enums/EventIds.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Event_Maps/event_map.rb" />
-        <option value="$PROJECT_DIR$/MainUI/View/MainUI.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Enums/manage_buttons.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Model/data_presenter.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Controller/setup_db.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/file_dialog.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/manage_ui.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
         <option value="$PROJECT_DIR$/MainUI/Enums/save_button.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/save_dialog.rb" />
-        <option value="$PROJECT_DIR$/MainUI/Dialogs/overwrite_warning.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/invalid_warning.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/save_model.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/overwrite_warning.rb" />
+        <option value="$PROJECT_DIR$/SQLite/lite_query.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb" />
+        <option value="$PROJECT_DIR$/SQLite/table_extension.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/Models/overwrite_model.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb" />
+        <option value="$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb" />
       </list>
     </option>
   </component>
@@ -196,6 +156,10 @@
               <option name="myItemId" value="ResourceManager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -238,8 +202,36 @@
               <option name="myItemId" value="ResourceManager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,6 +286,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Dialogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,7 +489,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23240589" sideWeight="0.6858148" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23158756" sideWeight="0.6858148" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39624855" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3059789" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -512,49 +530,19 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb</url>
+          <line>42</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="13" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQLite/connection.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.3320965" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Enums/manage_components.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Controller/main_driver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Enums/save_button.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
@@ -564,9 +552,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+    <entry file="file://$PROJECT_DIR$/MainUI/Controller/setup_db.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
+        <state line="4" column="67" selection-start="157" selection-end="169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="92" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -578,37 +573,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/save_dialog.rb">
+    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="110" selection-start="266" selection-end="369" vertical-scroll-proportion="0.0">
+        <state line="19" column="14" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/overwrite_warning.rb">
+    <entry file="file://$PROJECT_DIR$/Parser/node_manufacturer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="201" selection-end="1083" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/invalid_warning.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="6" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/save_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+        <state line="35" column="79" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.09409594">
+        <state line="12" column="75" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1279081777764" expanded="true" signature="18:5871" placeholder=" ... end" />
+            <marker date="1279081777764" expanded="true" signature="52:98" placeholder=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLite/table_extension.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/main_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="9" selection-start="925" selection-end="925" vertical-scroll-proportion="0.33272058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="79" selection-start="865" selection-end="865" vertical-scroll-proportion="0.6856618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/file_dialog.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="870" selection-end="880" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="36" selection-end="36" vertical-scroll-proportion="0.030411448">
           <folding />
         </state>
       </provider>

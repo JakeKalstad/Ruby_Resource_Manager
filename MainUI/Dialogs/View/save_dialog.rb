@@ -1,5 +1,5 @@
-require File.dirname(__FILE__) + "/../Enums/save_button"
-require File.dirname(__FILE__) + "/save_model"
+require File.dirname(__FILE__) + "/../../Enums/save_button"
+require File.dirname(__FILE__) + "/../Models/save_model"
 require 'rubygems'
 require 'wx'
 
@@ -25,15 +25,10 @@ class Save_Dialog < Wx::Frame
 
    def event_handlers
       evt_button(@ids.done) {
-                              Save_Events.new.click(@ids.done)
                               @model.set_path(@text_box_path.value)
                               self.hide
                             }
-
-    evt_button(@ids.cancel) {
-                                Save_Events.new.click(@ids.cancel)
-                                  self.hide
-                            }
+     evt_button(@ids.cancel) { self.hide }
    end
 
    def setup_sizing

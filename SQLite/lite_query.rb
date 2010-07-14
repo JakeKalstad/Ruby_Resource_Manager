@@ -63,6 +63,9 @@ class LiteQuery
        return @data_base.execute("select * from resource_pairs where save_Fkey == ?", @key)
      end
 
+     def get_resources_from_key(key)
+       return @data_base.execute("select * from resource_pairs where resource_key == ?", key)
+     end
 
      def save_set(save)
        saves = get_saves

@@ -1,15 +1,16 @@
-require File.dirname(__FILE__) + "/../Dialogs/file_dialog"
 require File.dirname(__FILE__) + "/../../SaveOffs/Read/read_save"
 require File.dirname(__FILE__) + "/../../SaveOffs/Write/write_save"
 require File.dirname(__FILE__) + "/../Service/data_presenter"
 require File.dirname(__FILE__) + "/../Event_Maps/manage_events"
 require File.dirname(__FILE__) + "../../../SQLite/lite_query"
-require File.dirname(__FILE__) + "/../Dialogs/save_dialog"
+require File.dirname(__FILE__) + "/../Dialogs/View/save_dialog"
+require File.dirname(__FILE__) + "/../Dialogs/View/file_dialog"
 
 module Events
   class Manage_Events
 
      def initialize
+        @query = LiteQuery.new
         @presenter = ResxPresenter.new
         @current_set = 1          # SHOULD BE DECIDED VIA CURRENT SELECTION
      end
@@ -18,7 +19,7 @@ module Events
        dialog = File_Dialog.new(nil, 'Choose a .resx file!', 'RESX File (*.resx)|*.resx|')
        result = dialog.show_modal
        if result == Wx::ID_OK
-        saver = Save.new(dialog.get_path(), @current_set)
+        Save.new(dialog.get_path(), @current_set)
        end
      end
 

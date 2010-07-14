@@ -8,6 +8,18 @@ class Table_Extension
      return resource[index][4]
   end
 
+  def self.create_resource_tuples(resources)
+    @tuples = Array.new
+
+    
+    resources.each_index{|i|
+      @tuple = Struct.new(:name, :value).new
+      @tuple.name = self.get_resource_name(resources, i)
+      @tuples.value = self.get_resource_value(resources, i)
+      @tuples << @tuple
+      }
+  end
+
   def self.get_resource_tuple_name(tuple)
     return tuple[0]
   end
