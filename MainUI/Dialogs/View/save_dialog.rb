@@ -26,7 +26,6 @@ class Save_Dialog < Wx::Frame
    def event_handlers
       evt_button(@ids.done) {
                               @model.set_path(@text_box_path.value)
-                              self.hide
                             }
      evt_button(@ids.cancel) { self.hide }
    end

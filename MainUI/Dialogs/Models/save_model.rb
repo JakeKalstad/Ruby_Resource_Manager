@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + "/../View/overwrite_warning"
 require File.dirname(__FILE__) + "/../View/invalid_warning"
 
 class Save_Model
-
+         attr_accessor :i_should_hide
   def initialize
     set_path_map
   end
@@ -14,19 +14,19 @@ class Save_Model
   end
 
   def valid_path
-     @valid = valid?
+     validation @path
      @exists = File.exists?(@path)
-      if !@valid
+      if @invalid
         @path = @path + '.resx' if !@path.include? '.resx'
       end
         return :existent if @exists
-        return :valid if valid?
+        return :valid if @invalid.nil?
         return :invalid
   end
 
-  def valid?
-    return false if @path == nil
-    return @path[/([a-zA-Z]:(\\w+)*\\[a-zA-Z0_9]+)?.resx/] != nil
+  def validation(path)
+    return false if path == nil
+    @invalid = path[/([a-zA-Z]:(\\w+)*\\[a-zA-Z0_9]+)?.resx/].nil?
   end
 
   def show_warning
@@ -36,11 +36,12 @@ class Save_Model
   end
 
   def is_valid
-
+        ssdf = asd;
   end
 
   def invalid
-      Invalid_Warning.new(@path + ' is invalid!', 'Invalid file path')
+      dialog = Invalid_Warning.new( @path + ' is invalid!', 'Invalid file path')
+      dialog.show
   end
 
   def set_path_map

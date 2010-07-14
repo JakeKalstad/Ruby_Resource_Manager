@@ -1,27 +1,28 @@
+require 'rubygems'
+require 'wx'
+
 class Invalid_Warning < Wx::Frame
-  def Initialize(info, title)
-    title = '' if title == nil
-      super(nil, :id => -1, :title => title, :size => Wx::Size.new(200,150))    
+  def initialize(info, title)
+    @info = info
+    title = "" if title.nil?
+    super(nil, :id => -2, :title => title, :size => Wx::Size.new(300,150))
+    initialize_components
+    button_events
   end
 
   def initialize_components
        @panel = Wx::Panel.new(self)
-       @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => info, :size => Wx::Size.new(250, 20))
+       @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => @info, :size => Wx::Size.new(150, 20))
        create_buttons
        @panel.set_sizer(setup_sizing)
   end
 
   def create_buttons
      @fixit_button = Wx::Button.new(@panel, 2, 'Resolve it!')
-     @exit_button = Wx::Button.new(@panel, 3, 'Forget it!')
   end
 
   def button_events
-    evt_btn(2){self.hide}
-    evt_btn(3){
-                
-                self.hide
-              }
+    evt_button(2) { self.hide }
   end
 
   def setup_sizing
@@ -35,7 +36,6 @@ class Invalid_Warning < Wx::Frame
      @controls = Array.new(3)
      @controls << @warning_label
      @controls << @fixit_button
-     @controls << @exit_button
    end
 
    def add_sizer(control)
