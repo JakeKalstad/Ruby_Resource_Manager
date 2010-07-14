@@ -1,16 +1,27 @@
-require File.dirname(__FILE__) + "../../SQLite/lite_query"
-require File.dirname(__FILE__) + "../../SQLite/table_extension"
+require File.dirname(__FILE__) + "/../../SQLite/lite_query"
+require File.dirname(__FILE__) + "/../../SQLite/table_extension"
 
 class Resx_Creator
-   def initialize(pair_key, path)
-     @key = pair_key
+   def initialize(original_path, path)
+     @origin = original_path
      @path = path
      @query = LiteQuery.new
+     create_file
+   end
+
+   def create_file
+     create_nodes
    end
 
    def create_nodes
-      @pairs = @query.get_resource_from_key(@key)
-      @pairs.each_index { |i| Table_Extension.get_resource_value(@pairs, i)}
+      @tuples = Array.new
+      @pairs = @query.get_resource_from_current_choice(@origin)
+      @pairs.each_index { |i|
+                                next_tuple = Struct.new(:name, :value).new
+                                next_tuple.value = Table_Extension.get_resource_value(@pairs, i)
+                                next_tuple.name = Table_Extension.get_resource_name(@pairs, i)
+                                @tuples << next_tuple
+                        }
    end
 
     $template_resx_beginning = "<?xml version=/""1.0/"" encoding=/""utf-8/""?>

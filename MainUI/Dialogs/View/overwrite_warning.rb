@@ -2,11 +2,12 @@ require 'rubygems'
 require 'wx'
 
 class OverWrite_Dialog < Wx::Frame
-      attr_accessor :can_overwrite
-  def initialize
+
+
+  def initialize(save_model)
+    @model = save_model
     super(nil, :id => -1, :title => "!Warning!", :size => Wx::Size.new(350,250))
     initialize_components
-    @can_overwrite = false
   end
 
   def initialize_components
@@ -22,8 +23,8 @@ class OverWrite_Dialog < Wx::Frame
    end
 
    def button_events
-     evt_button(2) { @can_overwrite = true }
-     evt_button(3) { @can_overwrite = false}
+     evt_button(2) { @model.overwrite = true }
+     evt_button(3) { @model.overwrite = false}
    end
 
    def setup_sizing

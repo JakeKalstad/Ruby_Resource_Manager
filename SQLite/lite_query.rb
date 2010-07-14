@@ -60,6 +60,7 @@ class LiteQuery
      end
 
      def get_resources
+       p @key
        return @data_base.execute("select * from resource_pairs where save_Fkey == ?", @key)
      end
 

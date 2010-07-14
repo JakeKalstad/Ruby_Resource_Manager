@@ -32,6 +32,10 @@ class Table_Extension
     return saves[index][3].split("\\")
   end
 
+  def self.get_single_save_display_string(save)
+    return save[3].split("\\")
+  end
+
   def self.get_save_key(saves, index)
     return saves[index][0]
   end
