@@ -8,9 +8,9 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="56595010-551f-40c5-a7af-6c9007c5567a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/table_extension.rb" afterPath="$PROJECT_DIR$/SQLite/table_extension.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Controller/resource.db" afterPath="$PROJECT_DIR$/MainUI/Controller/resource.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/table_extension.rb" afterPath="$PROJECT_DIR$/SQLite/table_extension.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite/lite_query.rb" afterPath="$PROJECT_DIR$/SQLite/lite_query.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb" afterPath="$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb" />
@@ -58,10 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resx_creator.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resx_creator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="55" selection-start="815" selection-end="815" vertical-scroll-proportion="0.5989209">
+            <state line="31" column="42" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_model.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.85528755">
               <folding />
             </state>
           </provider>
@@ -682,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="20" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.33271718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
@@ -712,7 +714,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="815" selection-end="815" vertical-scroll-proportion="0.5989209">
+        <state line="31" column="42" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/Model/manage_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.85528755">
           <folding />
         </state>
       </provider>
