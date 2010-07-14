@@ -7,11 +7,11 @@ class Save_Dialog < Wx::Frame
   attr_accessor :success
 
    def initialize(initial_file, path)
-      super(nil, :id => -1, :title => "Saving a new copy of #{initial_file}", :size => Wx::Size.new(500,150))
-      @success = false
+     @model = Save_Model.new
+      super(nil, :id => -1, :title => "Saving a new copy of #{initial_file}", :size => Wx::Size.new(600,150))
       @ids = Events::SaveButtons.new
       @panel = Wx::Panel.new(self)
-      @text_box_path = Wx::TextCtrl.new(@panel, :id => 1, :value => File.dirname(path), :size => Wx::Size.new(450,20))
+      @text_box_path = Wx::TextCtrl.new(@panel, :id => 1, :value => File.dirname(path), :size => Wx::Size.new(550,20))
       create_buttons
       event_handlers
       sizer = setup_sizing
@@ -25,16 +25,15 @@ class Save_Dialog < Wx::Frame
 
    def event_handlers
       evt_button(@ids.done) {
-                              @success = Save_Events.new.click(@ids.done)
-                              return if not @success
-                               
+                              Save_Events.new.click(@ids.done)
+                              @model.set_path(@text_box_path.value)
                               self.hide
                             }
 
     evt_button(@ids.cancel) {
-                                @success = Save_Events.new.click(@ids.cancel)
-                                self.hide
-                             }
+                                Save_Events.new.click(@ids.cancel)
+                                  self.hide
+                            }
    end
 
    def setup_sizing

@@ -5,6 +5,5 @@ p @data_base.execute("select * from save")
 p @data_base.execute("select * from resource_set")
 p @data_base.execute("select * from resource_pairs")
 p '~~~~~~~~~~~~~~DB OUTPUT ~~~~~~~~~~~~~~~~~~~~~'
-$Deleted = 666
 
 MainForm.new.main_loop
