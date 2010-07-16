@@ -12,7 +12,7 @@ class Resx_Creator
    def create_file
      create_nodes
      concat_nodes_to_template
-     File.open(@path, 'w') {|f| f.write($template_resx_beginning) }
+     File.open(@path, 'w') { |f| f.write($template_resx_beginning) }
    end
 
    def create_nodes
@@ -27,9 +27,9 @@ class Resx_Creator
 
       @nodes = Array.new
       @tuples.each_index {|i|
-                          @nodes << "<data name=\"#{@tuples[i].name} \" xml:space=\"preserve\">
-                              <value>#{@tuples[i].value}</value>
-                              </data>"
+                          @nodes << "<data name=\"#{@tuples[i].name} \" xml:space=\"preserve\">\n
+                              <value>#{@tuples[i].value}</value>\n
+                              </data>\n"
                          }
    end
 

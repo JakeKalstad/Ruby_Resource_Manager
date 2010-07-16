@@ -29,11 +29,13 @@ module Events
        @query.remove_save_by_name(choice_box.get_string_selection)
      end
 
-     def save_file(choice_box)
+     def save_file(choice_box, grids_table_base)
            content = get_content
            previous_saves = LiteQuery.new.get_saves
            previous_saves.each_index { |i| @path = previous_saves[i][3] if previous_saves[i][3].include? choice_box.get_string_selection }
            @path = File.dirname(__FILE__) if @path == nil
+
+           save_changes(grids_table_base)
            dialog = Save_Dialog.new(choice_box.get_string_selection, @path)
            dialog.show
            return if not dialog.success
@@ -54,6 +56,23 @@ module Events
          contents.each_index { |index| @choice.append(contents[index]) }
      end
 
+     def save_changes(grids_table_base)
+         retrieve_grid_content(grids_table_base)
+         @query.insert_save(@path, 1)
+         @key = @query.get_unattached_save;
+         @values.each_index {|i|@query.insert_resource_values_to_set(@key, 1, @names[i], @values[i])}
+     end
+
+     def retrieve_grid_content(table_base)
+       row_count = table_base.get_number_rows
+       @names = Array.new
+       @values = Array.new
+       (1..row_count).each do |i|
+          @names << table_base.get_value(i, 1)
+          @values << table_base.get_value(i, 2)
+       end
+     end
+
      def populate_grid(grid)
           refresh_grid(grid)
           content = get_content
@@ -64,6 +83,8 @@ module Events
      end
 
      def set_grid_values(content, index)
+         @main_grid.append_rows(1)
+         return if (content[index].value == nil || content[index].name == nil)
          @main_grid.set_cell_value(index, 1, content[index].value.strip)
          @main_grid.set_cell_value(index, 0, content[index].name)
      end

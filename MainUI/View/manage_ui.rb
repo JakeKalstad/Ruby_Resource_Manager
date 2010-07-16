@@ -48,7 +48,7 @@ class Manage_GUI < Wx::Frame
                                   @model.populate_grid(@grid)
                                }
 
-        evt_button(@ids.save)  { @model.save_file(@recent_menu)}
+        evt_button(@ids.save)  { @model.save_file(@recent_menu, @grid.get_table)}
    end
 
    def setup_grid

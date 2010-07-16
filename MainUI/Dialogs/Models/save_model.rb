@@ -2,6 +2,7 @@ require File.dirname(__FILE__) + "/../../Enums/save_button"
 require File.dirname(__FILE__) + "/../View/overwrite_warning"
 require File.dirname(__FILE__) + "/../View/invalid_warning"
 require File.dirname(__FILE__) + "/../../../SaveOffs/Write/resx_creator"
+require File.dirname(__FILE__) + "/../../../SaveOffs/Write/write_save"
 
 class Save_Model
       attr_accessor :overwrite
