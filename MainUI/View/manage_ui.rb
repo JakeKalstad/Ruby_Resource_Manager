@@ -6,7 +6,6 @@ require 'rubygems'
 require 'wx'
 
 class Manage_GUI < Wx::Frame
-
    def initialize
       super(nil, :id => -1, :title => 'Manage .resx Files', :size => Wx::Size.new(850,600))
       @model = Events::Manage_Events.new
@@ -30,13 +29,13 @@ class Manage_GUI < Wx::Frame
    end
  private
    def event_handlers
-      evt_button(@ids.add) {
+     evt_button(@ids.add) {
                               @model.on_click(@ids.add)
                               @recent_menu.clear
                               @model.populate_recent(@recent_menu)
                               @model.populate_grid(@grid)
                             }
-      evt_choice(@component_ids.recent_choice) {
+     evt_choice(@component_ids.recent_choice) {
                                                   @model.populate_grid(@grid)
                                                   @grid.auto_size
                                                   set_size(get_size+1)
@@ -47,6 +46,8 @@ class Manage_GUI < Wx::Frame
                                  @model.populate_recent(@recent_menu)
                                  @model.populate_grid(@grid)
                               }
+
+     evt_close() { self.show(false) }
 
      evt_button(@ids.save)  { @model.save_file(@recent_menu, @grid.get_table)}
    end

@@ -7,6 +7,10 @@ module Events
   class Main_Events
   attr_accessor :epic_map
   DIALOG_OPTIONS = Wx::NO_DEFAULT
+    def initialize
+        @manager = Manage_GUI.new()
+    end
+
 
     def create_map
          help_proc = proc { help_dialog }
@@ -16,10 +20,8 @@ module Events
          @epic_map = Mapping::EventMap.new(about_proc, help_proc, exit_proc, manage_proc).map
      end
 #                     I should almost put this in a resource file... :D
-  $help_message = "Enter the manager form and add a .resx file from the file dialog.\n
-                   Open a second manager pane and choose the added file from the recent menus.\n
-                   Using a form for reference/soft-copy and a second form to make edits, \n
-                   choose or provide the resources culture (fr-FR, en-GB, etc..) and hit save!\n"
+  $help_message = "Enter the manager form and add a .resx file from the file dialog. Open a second manager pane and choose the added file from the recent menus. Using a form for reference/soft-copy and a second form to make edits, choose or provide the resources culture (fr-FR, en-GB, etc..) and hit save!"
+
   private
      def help_dialog
          confirm = Wx::MessageDialog.new(nil, $help_message, "HELP", DIALOG_OPTIONS)
@@ -30,7 +32,7 @@ module Events
      end
 
      def about_dialog
-         confirm = Wx::MessageDialog.new(nil, "A resource management tool to help make localization\n\t the easy part!",
+         confirm = Wx::MessageDialog.new(nil, "A resource management tool to help make localization the easy part!",
                                          "About!", DIALOG_OPTIONS)
           case confirm.show_modal()
            when Wx::ID_OK
@@ -43,7 +45,10 @@ module Events
      end
 
      def manage_click
-       Manage_GUI.new.show
+       if @manager.is_shown()
+          Manage_GUI.new.show
+       end
+        @manager.show(true)
      end
   end
 end
