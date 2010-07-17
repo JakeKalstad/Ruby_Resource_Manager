@@ -9,16 +9,16 @@ class Invalid_Warning < Wx::Frame
     initialize_components
     button_events
   end
-
+ private
   def initialize_components
-       @panel = Wx::Panel.new(self)
-       @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => @info, :size => Wx::Size.new(150, 20))
-       create_buttons
-       @panel.set_sizer(setup_sizing)
+    @panel = Wx::Panel.new(self)
+    @warning_label = Wx::StaticText.new(@panel, :id => 1, :label => @info, :size => Wx::Size.new(150, 20))
+    create_buttons
+    @panel.set_sizer(setup_sizing)
   end
 
   def create_buttons
-     @fixit_button = Wx::Button.new(@panel, 2, 'Resolve it!')
+    @fixit_button = Wx::Button.new(@panel, 2, 'Resolve it!')
   end
 
   def button_events
@@ -26,16 +26,16 @@ class Invalid_Warning < Wx::Frame
   end
 
   def setup_sizing
-  stuff_controls
-       @sizer = Wx::BoxSizer.new(Wx::VERTICAL)
-       @controls.each_index { |i| add_sizer(@controls[i]) }
-     return @sizer
+    stuff_controls
+    @sizer = Wx::BoxSizer.new(Wx::VERTICAL)
+    @controls.each_index { |i| add_sizer(@controls[i]) }
+    return @sizer
    end
 
    def stuff_controls
-     @controls = Array.new(3)
-     @controls << @warning_label
-     @controls << @fixit_button
+    @controls = Array.new(3)
+    @controls << @warning_label
+    @controls << @fixit_button
    end
 
    def add_sizer(control)

@@ -7,7 +7,8 @@ class ResxPresenter
      return if choice_selection == ""
      resources = LiteQuery.new.get_resource_from_current_choice(choice_selection)
      resources.each_index { |i|
-                                 @display_item = Struct.new(:name, :value).new
+                                 @display_item = Struct.new(:key, :name, :value).new
+                                 @display_item.key = resources[i][0]
                                  @display_item.name = Table_Extension.get_resource_name(resources,i)
                                  @display_item.value = Table_Extension.get_resource_value(resources,i)
                                  @values << @display_item

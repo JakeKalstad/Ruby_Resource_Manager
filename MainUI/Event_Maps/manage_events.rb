@@ -1,7 +1,6 @@
 require File.dirname(__FILE__) + "/../Enums/manage_buttons"
 class Map
-   attr_accessor :map
-
+  attr_accessor :map
      def initialize(events)
         ids = ButtonIds.new
         @map = Hash.new

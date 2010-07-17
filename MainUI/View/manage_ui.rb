@@ -28,9 +28,9 @@ class Manage_GUI < Wx::Frame
      sizer = setup_sizing
      @panel.set_sizer(sizer)
    end
-
+ private
    def event_handlers
-       evt_button(@ids.add) {
+      evt_button(@ids.add) {
                               @model.on_click(@ids.add)
                               @recent_menu.clear
                               @model.populate_recent(@recent_menu)
@@ -39,23 +39,23 @@ class Manage_GUI < Wx::Frame
       evt_choice(@component_ids.recent_choice) {
                                                   @model.populate_grid(@grid)
                                                   @grid.auto_size
-                                                  set_size(get_size+1)  #h@kz0r to recenter the grid ƒü?X this when possible'
+                                                  set_size(get_size+1)
                                                }
-      evt_button(@ids.delete)  {
-                                  @model.remove_file(@recent_menu)
-                                  @recent_menu.clear
-                                  @model.populate_recent(@recent_menu)
-                                  @model.populate_grid(@grid)
-                               }
+     evt_button(@ids.delete)  {
+                                 @model.remove_file(@recent_menu)
+                                 @recent_menu.clear
+                                 @model.populate_recent(@recent_menu)
+                                 @model.populate_grid(@grid)
+                              }
 
-        evt_button(@ids.save)  { @model.save_file(@recent_menu, @grid.get_table)}
+     evt_button(@ids.save)  { @model.save_file(@recent_menu, @grid.get_table)}
    end
 
    def setup_grid
-    @grid = Wx::Grid.new(@panel, @component_ids.grid_id)
-    @grid.create_grid(5, 2)
-    @grid.set_col_label_value(0, 'name')
-    @grid.set_col_label_value(1, 'value')
+     @grid = Wx::Grid.new(@panel, @component_ids.grid_id)
+     @grid.create_grid(5, 2)
+     @grid.set_col_label_value(0, 'name')
+     @grid.set_col_label_value(1, 'value')
    end
 
    def create_buttons
@@ -89,5 +89,4 @@ class Manage_GUI < Wx::Frame
    def add_sizer(control)
     @sizer.add(control, 0, 65, 0)
    end
-
 end

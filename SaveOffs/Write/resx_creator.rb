@@ -9,33 +9,34 @@ class Resx_Creator
      create_file
    end
 
+   def create_nodes
+     @tuples = Array.new
+     @pairs = @query.get_resource_from_current_choice(@origin)
+     @pairs.each_index { |i|
+                             next_tuple = Struct.new(:name, :value).new
+                             next_tuple.value = Table_Extension.get_resource_value(@pairs, i)
+                             next_tuple.name = Table_Extension.get_resource_name(@pairs, i)
+                             @tuples << next_tuple
+                       }
+
+
+     @nodes = Array.new
+     @tuples.each_index {|i|
+                          return if @tuples[i].name.strip == '' || @tuples[i].name == nil
+                          @nodes << "\n<data name=\"#{@tuples[i].name.strip}\" xml:space=\"preserve\">\n<value>#{@tuples[i].value.strip}</value>\n</data>\n"
+                        }
+
+     concat_nodes_to_template
+   end
+ private
    def create_file
      create_nodes
-     concat_nodes_to_template
      File.open(@path, 'w') { |f| f.write($template_resx_beginning) }
    end
 
-   def create_nodes
-      @tuples = Array.new
-      @pairs = @query.get_resource_from_current_choice(@origin)
-      @pairs.each_index { |i|
-                                next_tuple = Struct.new(:name, :value).new
-                                next_tuple.value = Table_Extension.get_resource_value(@pairs, i)
-                                next_tuple.name = Table_Extension.get_resource_name(@pairs, i)
-                                @tuples << next_tuple
-                        }
-
-      @nodes = Array.new
-      @tuples.each_index {|i|
-                          @nodes << "<data name=\"#{@tuples[i].name} \" xml:space=\"preserve\">\n
-                              <value>#{@tuples[i].value}</value>\n
-                              </data>\n"
-                         }
-   end
-
    def concat_nodes_to_template
-       @nodes.each_index { |i| $template_resx_beginning << @nodes[i] }
-      $template_resx_beginning << "</root>"
+     @nodes.each_index { |i| $template_resx_beginning << @nodes[i] }
+     $template_resx_beginning << "</root>"
    end
 
    $template_resx_beginning = "<?xml version=\"1.0\" encoding=\"utf-8\"?>

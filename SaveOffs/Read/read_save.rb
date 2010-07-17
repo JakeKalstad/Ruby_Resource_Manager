@@ -2,7 +2,6 @@ require File.dirname(__FILE__) + "../../../SQLite/lite_query"
 require File.dirname(__FILE__) + "../../../SQLIte/table_extension"
 
 class Read
-
   def initialize
     @query = LiteQuery.new
     @save_rows = @query.get_saves
