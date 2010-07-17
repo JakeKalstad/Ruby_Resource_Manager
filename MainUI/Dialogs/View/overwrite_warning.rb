@@ -21,8 +21,14 @@ class OverWrite_Dialog < Wx::Frame
    end
 
    def button_events
-     evt_button(2) { @model.overwrite = true }
-     evt_button(3) { @model.overwrite = false}
+     evt_button(2) {
+                      @model.overwrite = true
+                      self.hide
+                   }
+     evt_button(3) {
+                      @model.overwrite = false
+                      self.hide
+                   }
    end
 
    def setup_sizing
