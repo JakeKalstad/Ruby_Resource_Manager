@@ -69,37 +69,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invalid_warning.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="8" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_model.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="save_model.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.2846847">
+            <state line="76" column="38" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainUI.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/View/MainUI.rb">
+      <file leaf-file-name="lite_query.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="50" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+            <state line="18" column="152" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_model.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainUI/Model/main_model.rb">
+      <file leaf-file-name="write_save.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="33" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0">
+            <state line="33" column="69" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.60211265">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup_db.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup_db.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
       <file leaf-file-name="manage_ui.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="108" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0">
+            <state line="67" column="61" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,21 +134,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/SQLite/connection.rb" />
-        <option value="$PROJECT_DIR$/SQLite/lite_query.rb" />
-        <option value="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Write/resx_creator.rb" />
         <option value="$PROJECT_DIR$/SaveOffs/Read/read_save.rb" />
         <option value="$PROJECT_DIR$/Parser/resx_reader.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/View/invalid_warning.rb" />
         <option value="$PROJECT_DIR$/MainUI/View/MainUI.rb" />
-        <option value="$PROJECT_DIR$/MainUI/View/manage_ui.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/main_model.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/View/overwrite_warning.rb" />
         <option value="$PROJECT_DIR$/MainUI/Enums/save_button.rb" />
         <option value="$PROJECT_DIR$/MainUI/Model/manage_model.rb" />
         <option value="$PROJECT_DIR$/Culturization/iso_codes.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb" />
+        <option value="$PROJECT_DIR$/SQLite/lite_query.rb" />
+        <option value="$PROJECT_DIR$/MainUI/View/manage_ui.rb" />
         <option value="$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb" />
+        <option value="$PROJECT_DIR$/SaveOffs/Write/write_save.rb" />
       </list>
     </option>
   </component>
@@ -198,114 +198,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialogs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialogs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Culturization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -334,20 +226,6 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Ruby.init">
-    <configuration default="false" name="setup_db" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="ResourceManager" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/setup_db.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="query_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ResourceManager" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -406,6 +284,20 @@
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lite_query" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="ResourceManager" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/SQLite" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/SQLite/lite_query.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -503,15 +395,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.setup_db" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.query_test" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.main_model" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.init" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda.All in: ResourceManager" />
-      <item index="5" class="java.lang.String" itemvalue="Ruby.event_map" />
-      <item index="6" class="java.lang.String" itemvalue="Ruby.resx_creator" />
-      <item index="7" class="java.lang.String" itemvalue="Ruby.retrieval_test" />
-      <item index="8" class="java.lang.String" itemvalue="Ruby.test_runner" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.query_test" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.main_model" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.init" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda.All in: ResourceManager" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.event_map" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.resx_creator" />
+      <item index="6" class="java.lang.String" itemvalue="Ruby.retrieval_test" />
+      <item index="7" class="java.lang.String" itemvalue="Ruby.test_runner" />
+      <item index="8" class="java.lang.String" itemvalue="Ruby.lite_query" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -537,12 +429,12 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34333733" sideWeight="0.996945" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30840045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30840045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26947537" sideWeight="0.6881473" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4880763" sideWeight="0.6835443" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39470655" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30379745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30379745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -595,27 +487,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MainUI/Service/data_presenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Event_Maps/manage_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/Event_Maps/event_map.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Enums/manage_components.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -686,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="108" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/View/save_dialog.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="60" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
@@ -700,9 +564,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setup_db.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainUI/View/manage_ui.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="61" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MainUI/Dialogs/Models/save_model.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.2846847">
+        <state line="76" column="38" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLite/lite_query.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="152" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveOffs/Write/write_save.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="69" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.60211265">
           <folding />
         </state>
       </provider>

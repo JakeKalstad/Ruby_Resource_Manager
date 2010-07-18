@@ -8,6 +8,7 @@ class LiteQuery
          save_id = @highest if save_id.empty? || save_id == nil
          previous_saves = get_saves
          @save_key = previous_saves[previous_saves.length-1][0]
+         p save_id
          @data_base.execute("update save set active_save = 1 where save_key == ?", save_id)
          @data_base.execute("insert into resource_pairs values (?,?,?,?,?)", @highest, @save_key, 1, name, value)
      end
@@ -35,7 +36,7 @@ class LiteQuery
 
      def remove_save_by_name(save_file)
          file = save_file.split(' ')[0]
-         saves = @data_base.execute("select * from save")
+         saves = @data_base.execute("select * from save where active_save == 1")
          saves.each_index { |i|  if Table_Extension.get_save_display_string(saves, i).include? file
                                                 @key = Table_Extension.get_save_resource_key(saves, i)
                                   end
@@ -63,7 +64,7 @@ class LiteQuery
          return @key
      end
 
-     def get_unattached_save
+     def get_unattached_saves
          return @data_base.execute("SELECT save_key FROM save where active_save != 1")
      end
 

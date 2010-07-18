@@ -7,7 +7,7 @@ require 'wx'
 
 class Manage_GUI < Wx::Frame
    def initialize
-      super(nil, :id => -1, :title => 'Manage .resx Files', :size => Wx::Size.new(850,600))
+      super(nil, :id => -1, :title => 'Manage .resx Files', :size => Wx::Size.new(650,450),  :style => (Wx::DEFAULT_FRAME_STYLE | (Wx::RESIZE_BORDER|Wx::RESIZE_BOX|Wx::MAXIMIZE_BOX)))
       @model = Events::Manage_Events.new
       initialize_components
       event_handlers
@@ -37,7 +37,6 @@ class Manage_GUI < Wx::Frame
                             }
      evt_choice(@component_ids.recent_choice) {
                                                   @model.populate_grid(@grid)
-                                                  @grid.auto_size
                                                   set_size(get_size+1)
                                                }
      evt_button(@ids.delete)  {
@@ -53,10 +52,13 @@ class Manage_GUI < Wx::Frame
    end
 
    def setup_grid
-     @grid = Wx::Grid.new(@panel, @component_ids.grid_id)
+     @grid = Wx::Grid.new(@panel, @component_ids.grid_id, :size => Wx::Size.new(625,275))
      @grid.create_grid(5, 2)
+     @grid.set_col_size( 0, 255 )
+     @grid.set_col_size( 1, 255 )
      @grid.set_col_label_value(0, 'name')
      @grid.set_col_label_value(1, 'value')
+     @grid.set_row_label_alignment(Wx::ALIGN_CENTRE, Wx::ALIGN_CENTRE)
    end
 
    def create_buttons
