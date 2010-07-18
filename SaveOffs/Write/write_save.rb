@@ -14,9 +14,9 @@ class Save
  private 
   def update_database
      @save_id = @query.get_unattached_saves
-      if save_id.kind_of? Array
-        @save_id = @save_id.last
-      end
+     if @save_id.length != 0
+       @save_id = @save_id.last
+     end
      @query.insert_save(@path, @current_set)
      @tuples = Node_Manufacturer.new(@path).resource_tuple_list
 
